@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Health</title>
+    
+
+</head>
+<body>
+
+  <!-- HEADER -->
+    <header>
+        <div class="left-section">
+        
+            <img src="images/logo health.png" >
+
+        </div>  
+
+        <div class="mid-section">
+            <form action=""><a href=""><i class="material-icons md-48">search</i></a>
+                <input type="text" placeholder="Search for product and services " ></input>
+     
+            </form>
+
+        </div>
+
+        <div class="right-section">
+
+            <a href=""><i class="material-icons md-48" style="font-size:18px" >person</i></a>
+            <a href=""><i class="material-icons md-48" style="font-size:18px">call</i></a>
+            <a href=""><i class="material-icons md-48" style="font-size:18px">shopping_cart</i></a>
+           
+        </div>
+    </header>
+
+ 
+ <div class="navigo">
+
+  <hr style="width:80%; margin-left:10% !important; margin-right:10% !important; background-color: white; margin-top: -1%; color: #949494;">   
+
+            <a href="">ACCEUIL</a>
+            <a href="">PRODUITS<i class="material-icons md-48" style="font-size:15px">expand_more</i></a>
+            <a href="">SERVICES<i class="material-icons md-48" style="font-size:15px">expand_more</i></a>
+            <a href="">QUI SOMMES NOUS ?</a>
+            <a href="">EXPERIENCE</a>
+            <a href="">INFOS/CONTACT</a>
+        </div>
+
+<section class="shd">
+
+    <!-- SLIDE  -->
+
+            <div class="carousel-inner">
+
+              <div class="movebutton">
+                  <a class="nexti" onclick="plusSlides(-1)">&#10094;</a>
+                 
+                </div>
+              <div class="mySlides example">
+                
+                <img src="images/pharmacist-checking-medicines-drugstore.png" class="mainimage" >
+                <h2 class="slidebigtext">VOTRE<br>SOLUTION SANTE</h2><br>
+                    <p class="slidesmalltext">Lorem, ipsum dolor sit amet consectetur adipibrInventore enim<br>
+                        Inventore enim quisquam, repellat eveniet Inventore enim <br> 
+                        harum pariatur doloremque maxime magni volInventore enim <br> 
+                        maxime magni volInventore enimatque nesciunt hrepelat! </p>
+
+                    <a href="" class="main-button">Savoir Plus</a>
+                
+              </div>
+
+
+              <div class="mySlides example">
+                
+                <img src="images/pharmacist-checking-medicines-drugstore.png" class="mainimage" >
+                <h2 class="slidebigtext">VOTRE<br>SOLUTION SANTE</h2><br>
+                    <p class="slidesmalltext">Lorem, ipsum dolor sit amet consectetur adipibrInventore enim<br>
+                        Inventore enim quisquam, repellat eveniet Inventore enim <br> 
+                        harum pariatur doloremque maxime magni volInventore enim <br> 
+                        maxime magni volInventore enimatque nesciunt hrepelat! </p>
+
+                    <a href="" class="main-button">Savoir Plus</a>
+                
+              </div>
+
+
+
+              <div class="mySlides example">
+                
+                <img src="images/pharmacist-checking-medicines-drugstore.png" class="mainimage" >
+                <h2 class="slidebigtext">VOTRE<br>SOLUTION SANTE</h2><br>
+                    <p class="slidesmalltext">Lorem, ipsum dolor sit amet consectetur adipibrInventore enim<br>
+                        Inventore enim quisquam, repellat eveniet Inventore enim <br> 
+                        harum pariatur doloremque maxime magni volInventore enim <br> 
+                        maxime magni volInventore enimatque nesciunt hrepelat! </p>
+
+                    <a href="" class="main-button">Savoir Plus</a>
+                
+              </div>
+
+             
+            
+          </div>
+
+          <div class="movebutton">
+            <a class="previous" onclick="plusSlides(-1)">&#10095;</a>
+         </div>
+
+         <div style="text-align:center" > 
+          <span class="dotslide" onclick="currentSlide(1)"></span>
+          <span class="dotslide" onclick="currentSlide(2)"></span>
+          <span class="dotslide" onclick="currentSlide(3)"></span>
+          <span class="dotslide" onclick="currentSlide(4)"></span>
+        </div>
+
+        <script>
+
+
+              let slideIndex = 1;
+              showSlides(slideIndex);
+
+              // Next/previous controls
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+
+              // Thumbnail image controls
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dotslide");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+              }
+        </script>
+
+
+
+        
+
+    <!-- BEST SELLER ORTHOPEDIE -->
+
+
+    
+        <h2 class="title">BEST SELLER ORTHOPEDIE</h2>
+             
+        <div class="content">
+          
+            <div class="card">
+                <div class="image">
+                    <img src="images/Capture décran 2022-03-24 134025.png" >
+                </div>
+                <div class="info">
+                    <h4 >25.<span>63$</span></h4>
+                    <p>Nicirette 500mg Menthe Existe en plusieur modele</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="images/Capture décran -1.png" >
+                </div>
+                <div class="info">
+                    <h4>25.<span>63$</span></h4>
+                    <p>Nicirette 500mg Menthe Existe en plusieur modele</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="images/Capture décran -2.png" >
+                </div>
+                <div class="info">
+                    <h4>25.<span>63$</span></h4>
+                    <p>Nicirette 500mg Menthe Existe en plusieur modele</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="images/Capture décran -3.png" >
+                </div>
+                <div class="info">
+                    <h4>25.<span>63$</span></h4>
+                    <p>Nicirette 500mg Menthe Existe en plusieur modele</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="images/Capture décran -4.png" >
+                </div>
+                <div class="info">
+                    <h4>25.<span>63$</span></h4>
+                    <p>Nicirette 500mg Menthe Existe en plusieur modele</p>
+                </div>
+            </div>
+
+            <div class="movebuttonn">
+            <a class="nextone" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+        </div>
+
+ 
+<!-- NOS CONSEILS -->
+
+<h2 class="titlenos_conseils">NOS CONSEILS SANTE</h2>
+
+<section class="slide2">
+
+
+  <div class="slide2">
+
+    <div class="movebuttons">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    </div>
+
+    
+    <div>
+      <div class="immaginehome">
+        <img src="images/portrait-beautiful-nurse.png" >
+        <h5 class="benvenuto">VOTRE SOLUTION SAINT</h5>
+        <p class="benvenutop">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis</p>
+      </div>
+    </div>
+
+
+    <div>
+      <div class="immaginehome">
+        <img src="images/medium-shot-friends-running-together.png" >
+        <h5 class="benvenuto">VOTRE SOLUTION SAINT</h5>
+        <p class="benvenutop">Lorem ipsum dolor sit amet consectetur adipisicing.elit. <br>  Perspiciatis</p>
+        </div>
+    </div>
+
+
+    <div>
+      <div class="immaginehome">
+        <img src="images/portrait-beautiful-mother-with-her-baby.png" alt="">
+        <h5 class="benvenuto">VOTRE SOLUTION SAINT</h5>
+        <p class="benvenutop">Lorem ipsum dolor sit amet consectetur adipisicing. elit. <br> Perspiciatis</p>
+      </div>
+    </div>
+
+    <div class="movebuttons">
+      <!-- Next and previous buttons -->
+      
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+
+</section>
+
+  <br>
+
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+
+
+<!-- 2 Big Images -->
+
+        <section class="imagestwo">
+            <div class="contenttwo">
+            <div class="twopictures"> 
+                <div class="image">
+                </div>
+
+                  <div class="lesinfos">
+                  <div class="infos">
+                    <img src="images/young-woman-pharmacist-pharmacy.png" >
+                      <div class="restonsencontact"><h2>RESTONS EN CONTACT</h2><br>
+                            <p>Inscrivez vous a vous communucation et benificiez de contenu exclusif, du<br>
+                                programes fidelite et offrespersonaliser pas plus d'un email par <br>  
+                                        semain</p>
+                            <input type="text" placeholder="Votre adresse email">
+                            <br>
+                            <a href="">JE M'INSCRIS</a>
+                      </div>
+               </div>
+
+                  <div>
+                    <img src="images/36588.png" >
+                 </div>  
+
+              </div>   
+            </div> 
+        </div>
+        </section>
+
+
+<!-- NOS PARTENAIRES -->
+
+
+      <div class="nos_partenaires">
+            <h2 class="title">NOS PARTENAIRES</h2>
+
+            <div class="contentnos_partenaires">
+
+                <div class="logos">
+                    <div class="image">
+                        <img src="images/logo.png" >
+                    </div>
+                </div>  
+                
+                <div class="logos">
+                    <div class="image">
+                        <img style="border-style: solid;border-width: 1px;border-color: rgb(230, 230, 230);"src="images/Mask Group 8.png" >
+                    </div>
+                </div> 
+
+                <div class="logos">
+                    <div class="image">
+                        <img style="border-style: solid;border-width: 1px;border-color: rgb(230, 230, 230);" src="images/Mask Group 9.png" >
+                    </div>
+                </div> 
+                    
+                 <div class="logos">
+                    <div class="image">
+                        <img  src="images/logo_anios.png" >
+                    </div>
+                </div> 
+
+                <div>
+                  <a href="" class="toutes_lesmarques_button">Voir toutes nos marques</a>
+                </div>
+
+            </div>
+          </div>
+       
+   
+    <!-- INNER TEXT SECTION -->
+
+
+    <div class="contentinner">
+
+          <div class="infoinner">
+             <div>
+              <h5 class="bigtext">ACHAT DE MEDICAMENT ET DE PRODUITS DE PARAMEDICAL SUR INTERNET</h5><br>
+              <p class="smalltext">Lorem ipsum dolor sit amett architecto quibusdam minima voluptas excepturi consequuntur? Consectetur obcaecati repellendus culpa asperiores, quae distinctio, consequuntur blanditiis dicta sunt, quam ullam ipsam harum nulla molestias commodi. Ipsum dolorum hic quas illo nam totam eligendi distinctio facilis deserunt non asperiores animi laborum cum ut provident dignissimos, repellendus similique. Nesciunt, aliquam placeat nulla voluptatum, quis minus voluptas commodi laboriosam harum providentem.</p>
+
+               <h5 class="bigtext">VOTRE PARAMEDICAL EN LIGNE</h5>
+                <p class="smalltext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quo numquam assumenda deleniti itaque perferendis provident ipsum odio, minima eius eos, animi voluptatem corporis ratione modi reprehenderit illo id voluptatum?</p>
+             </div>
+
+
+             <div> 
+                 <img src="images/fgh.png" class="imageinner">
+             </div>
+          </div>
+
+    </div>
+    <br>
+
+    <div>
+      <p style="font-size: 13px; padding: 0 60px;line-height: 2;">Lorem ipsum dolor sit amet, consectetur dis provident ipsum odio, minima eius eos, animi voluptatemd voluptatum? animi voluptatem corporis ratione modi reprehenderit illo id voluptatumLorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quo numquam assumenda deleniti itaque perferendis provident ipsum odio, minima eius eos, animi voluptatem corpovoluptatum</p>
+    </div>
+    
+    
+
+  <!-- AVANTAGES -->
+
+
+  <div class="les_avantages"> 
+
+    <h2 class="title">LES AVANTAGES</h2>
+
+ 
+    <div class="avantage_content">
+
+        <div class="avantages">
+         
+             <div class="avantage">
+              <img src="images/Parapharmacie Icones-01.png" class="imageavantage">
+              <h4 class="bigtextavantage">LIVRAISON GRATUITE</h4>
+              <p class="smalltextavantage">Lorem ipsum dolor sit amet consectetur adipisicing elitadipisicing elit.</p>
+      
+             </div>
+  
+            <div class="avantage">
+              <img src="images/Parapharmacie Icones-02.png" class="imageavantage">
+            <h4 class="bigtextavantage">RETOUR GRATUIT</h4>
+            <p class="smalltextavantage">  Lorem ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit.</p>
+    
+            </div>
+ 
+          <div class="avantage">
+            <img  src="images/Parapharmacie Icones-03.png" class="imageavantage">
+          <h4 class="bigtextavantage">PRODUITS CONTROLES</h4>
+          <p class="smalltextavantage">Lorem ipsum dolor sit amet consectetur adipisicing elit adipisicing elit..</p>
+
+          </div>
+ 
+        <div class="avantage">
+          <img src="images/Parapharmacie Icones-04.png" class="imageavantage">
+        <h4 class="bigtextavantage">ACHATS 100% SECURISES</h4>
+        <p class="smalltextavantage">Lorem ipsum dolor sit amet consectetur adipisicing elit adipisicing elit..</p>
+
+        </div>     
+     
+  </div>  
+  </div>
+
+
+<!-- FORMULAIRE DE CONTACT -->
+
+
+  <div class="formuaire_contact">
+
+          <div class="infoformulaure">
+            <h4>POUR PLUS D'INFORMATION, CONTACTEZ-NOUS !</h4>
+            
+            <a href="" >ACCEDER AU FORMULAIRE CONTACT</a>
+       
+         </div>
+
+          <div class="formulaireimages">
+           
+            <img src="images/sdd.png" >
+          
+            <img src="images/Mail sent-rafiki.png" >
+          </div>
+       
+  </div>
+
+</section>
+
+</section>
+
+        <!-- Footer -->
+<footer class="text-center text-lg-start text-muted" style="background-color: #0078A5;">
+   
+  
+    <!-- Section: Links  -->
+    <section class="footer" >
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-3 mx-1 mb-4 " >
+            <!-- Content -->
+            <h6 class="text-uppercase mb-4">
+              MEDICALLIANCE
+            </h6>
+            <p >
+              2, rue des satellites <br>
+              Parc technologie du canal <br>
+              31520 RAMONIVILLE SAINT-AGNE
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-4 mb-4 text-decoration-none">
+            <!-- Links -->
+            <h6 class="text-uppercase  mb-4">
+              NOS SERVICES
+            </h6>
+            <p>
+              <a href="" class="text-reset text-decoration-none">Reparation et entretien</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Collecte de materiel medicale</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">depot des dasris</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">bien etre academie</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="position: relative ; left:4%">
+            <!-- Links -->
+            <h6 class="text-uppercase  mb-4">
+              NOS PRODUITS
+            </h6>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Maintain a domicile</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none ">Handicap Enfant</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Handicap Adults</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Professionnels de santw</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset text-decoration-none">Ergonomie au travail</a>
+              </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-5 mb-md-0 mb-4" style="position: relative ; left:5%">
+            <!-- Links -->
+            <h6 class="text-uppercase  mb-4" >
+                FOLLOW
+              </h6>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Facebbok </a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Instagram</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Twitter</a>
+              </p>
+            
+            </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+
+      <div class="payement">
+        <img src="images/Icon payment-visa.png" >
+        <img src="images/Icon payment-mastercard-alt.png" alt="">
+        <img src="images/Icon payment-paypal.png" alt="">
+      </div>
+
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="color: white; font-size : 13px;  border-top: 0.01em solid #949494; margin: 0 150px;">
+      © 2021 Mediclub -2020 Rous droits reserve
+      
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+</body>
+</html>

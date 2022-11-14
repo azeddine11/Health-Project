@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+}
+
+.shd {
+  margin: 0  40px;
+  border: 0 solid #0078A5 ;
+  background-color: white;
+  padding: 0%;
+}
+
+/* HEADER */
+
+header {
+  background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 150px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-section img {
+    width: 86%;
+    padding: 16px;
+}
+
+.mid-section {
+    display: flex;
+    align-items: center;
+    margin-left: -7%;
+    position: relative;
+}
+
+.mid-section form{
+    display: flex;
+    height: 30px;
+    width: 470px;
+}
+
+.mid-section input{
+    width: 100%;
+    border-radius: 40px 40px;
+    padding: 12px;
+    font-size: 0.7rem;
+    font-style: italic;
+    border: 1px solid #0078A5;
+    position: relative;
+}
+
+
+.mid-section a {
+  position: absolute;
+  z-index: 999;
+  left: 93%;
+  top: 5%;
+  color: #0078A5;
+}
+
+.mid-section ::placeholder {
+    color: 	#0078A5;
+  }
+
+
+.right-section a{
+    padding-right: 8px;
+    text-decoration: none;
+    color: black;
+}  
+
+.navigo a{
+   font-size: 12px;
+   color: black;
+   padding: 15px;
+   text-decoration: none;
+}
+
+.navigo a:hover{
+    border-bottom: 3px solid #0078A5;
+    padding-bottom: 10px
+}
+
+.navigo{
+  background-color: white;
+  text-align: center;
+  padding: 20px 20px 10px 20px;
+}
+
+section{
+    padding: 20px 130px
+}
+
+/* SLIDE */
+
+.carousel-inner {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.mySlides{
+    position: relative;
+  }
+
+  .example {
+    animation-name: example;
+    animation-duration: 1.5s;
+  }
+
+
+  .mainimage {
+    height: 460px;
+    width: 100%;
+  }
+
+  .slidebigtext {
+    position: absolute;
+    top: 28%;
+    z-index: 999;
+    left: 9%;
+    color: white;
+    z-index: 999;
+    font-weight: bold;
+  }
+
+  .slidesmalltext {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    left: 9%;
+    color: white;
+    z-index: 999;
+    font-size: 10px;  
+  }
+
+  .main-button{
+    position: absolute;
+    top: 68%;
+    left: 9%;;
+    color: white;
+    padding: 7px 40px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 50px; 
+  }
+
+  .movebutton {
+    position: relative;
+  }
+  
+  .previous, .nexti {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background-color: #0078A5;
+    padding: 0px 12px;
+    border: 1px solid #0078A5;
+    border-radius: 100px ;
+    z-index: 999;
+  }
+  
+  /* Position the "next button" to the right */
+  .nexti {
+    position: absolute;
+    left: 1%;
+    top: 200px;
+  }
+  
+  .previous {
+    position: absolute;
+    right: 1%;
+    bottom: 290px;
+  }
+
+  .dotslide {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    z-index: 999;  
+  }
+
+ .dotslide:hover {
+    background-color: #0078A5 ;
+  }
+  
+
+  /* BEST SELLER ORTHOPEDIE */
+
+  .title {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 1.6em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+  }
+
+  .card{
+      border: 0ch;
+      background-color: rgb(255, 255, 255);
+      padding: 0 36px;
+  }
+
+  .card img{
+    height: 160px;
+  }
+
+  .info{ 
+    text-align: center;
+    width: 130px;
+  }
+
+  .info h4{
+    color: orange;
+    font-size: 1.2em;
+    margin: 10px;
+    font-weight: 600;
+  }
+
+  .info span{
+    color: orange;
+    font-size: 0.7em;
+    font-weight: 400;
+  }
+
+  .info p{
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  .movebutton {
+    position: relative;
+  }
+
+  .nextone {
+    position: absolute;
+    top: 45%;
+    right: 0px ;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background-color: #0078A5;
+    padding: 0px 12px;
+    border: 1px solid #0078A5;
+    border-radius: 100px ;
+  }
+
+
+  /*  NOS CONSEILS */
+
+.slide2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.titlenos_conseils {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 1.6em;
+  margin-top: 10%;
+}
+
+.immaginehome{
+  position: relative;
+  }
+  
+  .slide2 img{
+    position: relative;
+    text-align: center;
+    height: 242px;    
+  }
+  
+  .benvenuto{
+    position: absolute;
+    top: 55%;
+    left: 10px;
+    color: white;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .benvenutop{
+    position: absolute;
+    top: 70%;
+    left: 10px;
+    color: white;
+    font-size: 10px;
+    z-index: 999;
+  }
+
+  /* gradient */
+
+.immaginehome {
+  position:relative;
+  margin: 0 25px;
+}
+
+
+.immaginehome::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, #70707000, #0078A5);
+}
+
+.slide2_images2 {
+  position:relative;
+  margin: 0 25px;
+}
+
+.slide2_images2::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, #70707000, #0078A5);
+}
+
+
+.slide2_images3 {
+  position:relative;
+  margin: 0 25px;
+}
+
+.slide2_images3::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, #70707000, #0078A5);
+}
+
+
+
+/* move buttons */
+
+.movebuttons {
+  position: relative;
+}
+
+.prev, .next {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  background-color: #0078A5;
+  padding: 0px 12px;
+  border: 1px solid #0078A5;
+  border-radius: 100px ;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: relative;
+}
+
+.prev {
+  position: relative;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #0078A5;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 45px;
+  margin-top: -1.5%;
+}
+
+.active, .dot:hover {
+  background-color: #0078A5 ;
+}
+
+
+  /* 2 Big Images */
+
+  .contenttwo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 40px 0;
+  }
+
+  /* gradient */
+
+  .lesinfos {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .infos {
+    position:relative;
+    margin: 0 25px;
+  }
+  
+  .infos::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, #70707000, #0078A5);
+  }
+
+  .contenttwo img{
+    position: relative;
+    text-align: center;
+    height: 430px; 
+  }
+
+  .restonsencontact {
+    position: absolute;
+    top: 36%;
+    left: 50px;
+    color: black;
+    text-align: center;
+    z-index: 999;
+  }
+
+   .restonsencontact h2{
+    color: white;
+    font-weight: 600;
+     z-index: 999;
+  }
+
+  .restonsencontact p {
+    color: white;
+    font-size: 12px;
+    width: 450px;
+  }
+
+  .restonsencontact input{
+    z-index: 999;
+    width: 420px;
+    border: 1px solid white;
+    background: transparent;
+  } 
+
+  .restonsencontact ::placeholder {
+    padding: 0 160px;
+    color: aliceblue;
+    font-size: 10px;
+  }
+
+  .restonsencontact a {
+    text-decoration: none;
+    background-color: rgb(10, 173, 214);
+    color: white;
+    border-radius: 3px;
+    padding: 6px 16px;
+    z-index: 999;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    top: 120%;
+    left: 38%; 
+  }
+
+  /* NOS PARTENAIRES */
+  .nos_partenaires{
+    position: relative;
+  }
+
+  .contentnos_partenaires {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .logos{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 20px;
+    position: relative;
+  }
+
+
+  .toutes_lesmarques_button{
+    text-decoration: none;
+    background-color: #0078A5;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 10px;
+    width: 220px;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    left: 41.5%;
+    top: 110%;
+    text-align: center;
+  }
+
+ /* INNER TEXT SECTION */
+
+  .contentinner {
+    position: relative;
+    padding: 0 60px ;
+    margin-top: 13%;
+  }
+
+  .infoinner {
+   position: relative;
+   display: flex;
+  }
+
+  .bigtext {
+    position: relative;
+    font-size: 18px;
+    color: #0078A5;
+    padding-right: 25px;
+  }
+
+  .smalltext {
+    position: relative;
+    font-size: 13px;
+    padding-right: 25px;
+    line-height: 2;
+
+  }
+
+  .imageinner{
+    position: relative;
+    height: 390px;
+  }
+
+  /* LES AVANTAGES */
+
+.avantage_content {
+  position: relative;
+}
+
+.avantages {
+  display: flex;
+  justify-content: center;
+  padding: 0 100px ;
+  position: relative;
+  border-top: 0.01em solid #dbdbdb;  
+}
+
+.avantage {
+  padding: 12px;
+}
+
+.imageavantage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: 90px; 
+}
+
+.bigtextavantage {
+  font-size: 16px;
+  text-align: center;
+}
+
+.smalltextavantage {
+  font-size: 10px;
+  text-align: center;
+}
+
+.les_avantages .title {
+  font-size: 21px;
+  display: flex;
+  border-bottom: 6px solid #0078A5;
+  width: 16%;
+  position: relative;
+  left: 41%;
+  bottom: 2%;
+  margin-bottom: -0.1%;
+}
+
+
+/* formulaire contact  */
+
+ .formuaire_contact {
+  position: relative;
+}
+
+.formulaireimages {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(248, 248, 248);
+  padding: 0 120px;
+}
+
+.infoformulaure {
+  position: relative;
+}
+
+.infoformulaure h4{
+  position: absolute;
+  left: 26%;
+  top: 54px;
+  z-index: 999;
+  font-size: 26px;
+  color: #0078A5;
+  font-weight: 500;
+}
+
+
+.infoformulaure a {
+  color: #0078A5;
+  text-decoration: none;
+  border: 1px solid #0078A5;
+  border-radius: 60px;
+  padding: 8px 40px;
+  z-index: 999;
+  position: absolute;
+  left: 36%;
+  top: 110px;
+}
+
+ /* FOOTER */
+
+ .footer{
+  position: relative;
+  left: 3%;
+  padding: 20px;
+}
+
+footer p,h6{
+  color: white;
+  font-size: 11px;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+footer h6{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.payement {
+  position: absolute;
+  right: 290px;
+  bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
